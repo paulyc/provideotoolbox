@@ -3,3 +3,5 @@
 #ffmpeg -vaapi_device /dev/dri/renderD128 -hwaccel vaapi -hwaccel_output_format vaapi -i ItsS10E10.mkv -vf 'format=nv12|vaapi,hwupload' -c:v h264_vaapi -qp 25 -c:a copy -y output.mp4
 
 ffmpeg -vaapi_device /dev/dri/renderD128 -hwaccel vaapi -hwaccel_output_format vaapi -i TRAINSPOTTING/BDMV/STREAM/00800.m2ts -vf 'format=nv12|vaapi,hwupload' -c:v h264_vaapi -qp 25 -map 0:v:0 -map 0:a -c:a copy -movflags +faststart -y /passport/videos/movies/trainspotting.mp4
+
+ffmpeg -vaapi_device /dev/dri/renderD128 -hwaccel vaapi -hwaccel_output_format vaapi -i Skid\ Row\ -\ 18\ And\ Life\ \(Official\ Music\ Video\)-Ghd2bkIadG4.mkv -vf 'crop=1440:1080:240:0,deinterlace_vaapi=rate=field:auto=1,scale_vaapi=640:480,setsar=1,hwupload' -c:v h264_vaapi -qp 25 -map 0:v:0 -map 0:a -c:a aac -b:a 224k -movflags +faststart -y Skid\ Row\ -\ 18\ And\ Life\ \(Official\ Music\ Video\).mp4 
