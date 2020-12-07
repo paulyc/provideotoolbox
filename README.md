@@ -8,7 +8,7 @@ tools and information for manipulating video
 * DCI "Flat" (3996x2160) = 37:20 = 1.85
 * True 64:27 (2560×1080, 5120×2160, 7680×3240, 10240×4320) = 2.370370...
 * Blu-Ray (1920x1080, no anamorphic) = UHD BD (3840×2160) = 16:9 = 1.777...
-### 7:3 HDMI formats
+### 7:3 = 2.333... HDMI formats
 * 1280×720, PAR = 4:3
 * 1680×720, PAR = 64:63
 * 1920×1080, PAR = 4:3
